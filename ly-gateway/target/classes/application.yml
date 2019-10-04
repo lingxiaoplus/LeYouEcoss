@@ -1,0 +1,29 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: api-gateway  # 服务名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka   # eureka中拉取服务列表
+zuul:
+  prefix: /api  # 添加路由前缀
+  routes:
+    item-service: /item/** # 将商品微服务映射到/item/**
+    upload-service:  # 文件上传 要忽略去掉前缀  因为网关默认匹配上了之后，会去掉upload前缀 如/upload/image  => /image，没有uplaod了
+      path: /upload/**
+      service: upload-service
+      strip-prefix: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000  # 熔断超时时长 5000ms
+ribbon:
+  ConnectTimeout: 1000  # ribbon连接超时时长
+  ReadTimeout: 3500 # ribbon读取超时时长
+  MaxAutoRetries: 0 # 当前服务重试次数
+  MaxAutoRetriesNextServer: 0 # 切换服务重试次数
