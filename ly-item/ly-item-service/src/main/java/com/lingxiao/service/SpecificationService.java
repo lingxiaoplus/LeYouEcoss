@@ -42,12 +42,15 @@ public class SpecificationService {
         }
     }
 
-    public List<SpecParam> getGroupParamByGid(Long gid) {
+    public List<SpecParam> getGroupParamByGid(Long gid,Long cid,Boolean searching) {
         SpecParam specParam = new SpecParam();
         specParam.setGroupId(gid);
+        specParam.setCid(cid);
+        specParam.setSearching(searching);
         List<SpecParam> list = paramMapper.select(specParam);
         if (CollectionUtils.isEmpty(list)){
-            throw new LyException(ExceptionEnum.SELECT_GROUP_PARAM_NOT_FOUNT);
+            // TODO: 2019/10/7 暂时去除  不然在添加elasticsearch索引库的时候会因为一些脏数据添加失败
+            //throw new LyException(ExceptionEnum.SELECT_GROUP_PARAM_NOT_FOUNT);
         }
         return list;
     }

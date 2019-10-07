@@ -4,20 +4,18 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lingxiao.enums.ExceptionEnum;
 import com.lingxiao.exception.LyException;
-import com.lingxiao.mapper.BrandMapper;
-import com.lingxiao.mapper.SpuMapper;
-import com.lingxiao.pojo.Brand;
-import com.lingxiao.pojo.Category;
-import com.lingxiao.pojo.Spu;
+import com.lingxiao.mapper.*;
+import com.lingxiao.pojo.*;
 import com.lingxiao.vo.PageResult;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.Arrays;
-import java.util.List;
+import java.beans.Transient;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service("goodsService")
@@ -28,6 +26,12 @@ public class GoodsService {
     private CategoryService categoryService;
     @Autowired
     private BrandService brandService;
+    @Autowired
+    private SpuDetailMapper spuDetailMapper;
+    @Autowired
+    private StockMapper stockMapper;
+    @Autowired
+    private SkuMapper skuMapper;
 
     public PageResult<Spu> getGoodsByPage(Integer pageNum, Integer rows, Boolean saleable, String key) {
         PageHelper.startPage(pageNum,rows);
@@ -57,9 +61,85 @@ public class GoodsService {
             List<String> collect = categoryList.stream().map(Category::getName).collect(Collectors.toList());
             spu.setCname(StringUtils.join(collect,"/"));
 
-            Brand brand = brandService.getBrandById(spu.getBrand_id());
+            Brand brand = brandService.getBrandById(spu.getBrandId());
             if (brand != null)
                 spu.setBname(brand.getName());
         }
+    }
+
+    @Transactional
+    public void saveGoods(Spu spu) {
+        //新增spu
+        spu.setCreateTime(new Date());
+        spu.setLastUpdateTime(spu.getCreateTime());
+        spu.setId(null);
+        spu.setSaleable(true);
+        spu.setValid(false);
+        int spuCount = spuMapper.insert(spu);
+        if (spuCount != 1){
+            throw new LyException(ExceptionEnum.GOODS_SPU_ADD_ERROR);
+        }
+        //新增detail
+        SpuDetail spuDetail = spu.getSpuDetail();
+        spuDetail.setSpu_id(spu.getId());
+        int detailCount = spuDetailMapper.insert(spuDetail);
+        if (detailCount != 1){
+            throw new LyException(ExceptionEnum.GOODS_SPU_DETAIL_ADD_ERROR);
+        }
+        //新增sku
+        List<Sku> skus = spu.getSkus();
+        List<Stock> stocks = new ArrayList<>();
+        skus.stream().forEach((sku)->{
+            sku.setSpuId(spu.getId());
+            sku.setCreateTime(new Date());
+            sku.setLastUpdateTime(sku.getCreateTime());
+            int skuCount = skuMapper.insert(sku);
+            if (skuCount != 1){
+                throw new LyException(ExceptionEnum.GOODS_SKU_ADD_ERROR);
+            }
+            Stock stock = new Stock();
+            stock.setSku_id(sku.getId());
+            stock.setStock(sku.getStock());
+            stocks.add(stock);
+        });
+        int stockCount = stockMapper.insertList(stocks);
+        if (stockCount != stocks.size()){
+            throw new LyException(ExceptionEnum.GOODS_STOCK_ADD_ERROR);
+        }
+    }
+
+    public SpuDetail getGoodsDetail(Long id) {
+        SpuDetail spuDetail = spuDetailMapper.selectByPrimaryKey(id);
+        if (spuDetail == null){
+            // TODO: 2019/10/7 暂时去除  不然在添加elasticsearch索引库的时候会因为一些脏数据添加失败
+            //throw new LyException(ExceptionEnum.GOODS_DETAIL_NOT_EXIST);
+        }
+        return spuDetail;
+    }
+
+    public List<Sku> getSkusByPid(Long id) {
+        Sku sku = new Sku();
+        sku.setSpuId(id);
+        List<Sku> skuList = skuMapper.select(sku);
+        if (CollectionUtils.isEmpty(skuList)){
+            throw new LyException(ExceptionEnum.GOODS_SKU_LIST_NOT_EXIST);
+        }
+
+        //查询库存
+        /*skuList.forEach((sk)->{
+            Stock stock = stockMapper.selectByPrimaryKey(sk.getId());
+            if (stock == null){
+                throw new LyException(ExceptionEnum.GOODS_STOCK_IS_EMPTY);
+            }
+            sku.setStock(stock.getStock());
+        });*/
+        List<Long> ids = skuList.stream().map(Sku::getId).collect(Collectors.toList());
+        List<Stock> stocks = stockMapper.selectByIdList(ids);
+        if (CollectionUtils.isEmpty(stocks)){
+            throw new LyException(ExceptionEnum.GOODS_STOCK_IS_EMPTY);
+        }
+        Map<Long, Integer> map = stocks.stream().collect(Collectors.toMap(Stock::getSku_id, Stock::getStock));
+        stocks.forEach(stock -> stock.setStock(map.get(stock.getSku_id())));
+        return skuList;
     }
 }

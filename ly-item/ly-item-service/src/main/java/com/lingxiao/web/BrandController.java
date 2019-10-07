@@ -4,9 +4,7 @@ import com.lingxiao.pojo.Brand;
 import com.lingxiao.service.BrandService;
 import com.lingxiao.vo.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,5 +30,19 @@ public class BrandController {
     public ResponseEntity<Void> addBrand(Brand brand, @RequestParam(value = "cids") List<Long> cids){
         brandService.addBrand(brand,cids);
         return ResponseEntity.ok().build();
+    }
+    @GetMapping("/cid/{cid}")
+    public ResponseEntity<List<Brand>> getBrandByCid(@PathVariable("cid") Long cid){
+        return ResponseEntity.ok(brandService.getBrandByCid(cid));
+    }
+
+    /**
+     * 根据品牌id查到品牌
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public ResponseEntity<Brand> getBrandById(@PathVariable("id") Long id){
+        return ResponseEntity.ok(brandService.getBrandById(id));
     }
 }
