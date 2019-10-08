@@ -10,6 +10,8 @@ public class PageResult<T> {
     private Integer totalPage;  //一共有多少页
     private List<T> items;
 
+    public PageResult() {
+    }
 
     public PageResult(Long total, List<T> data) {
         this.total = total;

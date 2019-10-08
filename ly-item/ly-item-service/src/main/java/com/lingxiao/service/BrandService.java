@@ -84,4 +84,17 @@ public class BrandService {
         }
         return list;
     }
+
+    /**
+     * 根据bids 批量查询品牌
+     * @param ids
+     * @return
+     */
+    public List<Brand> getBrandByIds(List<Long> ids) {
+        List<Brand> brandList = brandMapper.selectByIdList(ids);
+        if (CollectionUtils.isEmpty(brandList)){
+            throw new LyException(ExceptionEnum.BRAND_NOT_FOUND);
+        }
+        return brandList;
+    }
 }

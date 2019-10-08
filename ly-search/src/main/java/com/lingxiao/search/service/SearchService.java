@@ -9,6 +9,7 @@ import com.lingxiao.search.client.GoodsClient;
 import com.lingxiao.search.client.SpecificationClient;
 import com.lingxiao.search.pojo.Goods;
 import com.lingxiao.search.pojo.SearchRequest;
+import com.lingxiao.search.pojo.SearchResult;
 import com.lingxiao.search.repository.GoodsRepository;
 import com.lingxiao.vo.PageResult;
 import lombok.extern.slf4j.Slf4j;
@@ -16,10 +17,16 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.elasticsearch.index.query.Operator;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.aggregations.Aggregation;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.Aggregations;
+import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
+import org.elasticsearch.search.aggregations.bucket.terms.LongTermsAggregator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.query.FetchSourceFilter;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.stereotype.Service;
@@ -41,6 +48,9 @@ public class SearchService {
     private SpecificationClient specificationClient;
     @Autowired
     private GoodsRepository goodsRepository;
+    //聚合查询只能用下面这个template
+    @Autowired
+    private ElasticsearchTemplate elasticsearchTemplate;
 
     public Goods createGoodsData(Spu spu){
 
@@ -176,11 +186,55 @@ public class SearchService {
                 //3. 分页
                 .withPageable(PageRequest.of(page,size));
 
-        //4. 查询获取结果
+        /*//4. 查询获取结果  因为要做聚合，所以不能用Repository
         Page<Goods> goodsPage = goodsRepository.search(queryBuilder.build());
         int totalPages = goodsPage.getTotalPages();
         long total = goodsPage.getTotalElements();
-        List<Goods> goodsList = goodsPage.getContent();
-        return new PageResult<>(total,totalPages,goodsList);
+        List<Goods> goodsList = goodsPage.getContent();*/
+        //对查询条件进行聚合
+        String categoryAggName = "category_agg";
+        String brandAggName = "brand_agg";
+        queryBuilder
+                .addAggregation(AggregationBuilders.terms(categoryAggName).field("cid3"))
+                .addAggregation(AggregationBuilders.terms(brandAggName).field("brandId"));
+
+        AggregatedPage<Goods> result = elasticsearchTemplate.queryForPage(queryBuilder.build(), Goods.class);
+        int totalPages = result.getTotalPages();
+        long total = result.getTotalElements();
+        //获取到聚合的数据
+        Aggregations aggregations = result.getAggregations();
+        List<Category> categoryList = parseCategoryList(aggregations.get(categoryAggName));
+        List<Brand> brandList = parseBrandList(aggregations.get(brandAggName));
+        //获取查询的数据
+        List<Goods> goodsList = result.getContent();
+        return new SearchResult(total,totalPages,goodsList,categoryList,brandList);
+    }
+
+    private List<Brand> parseBrandList(LongTerms terms) {
+        List<Brand> brandList = null;
+        try {
+            List<Long> longList = terms.getBuckets()
+                    .stream()
+                    .map(bucket -> bucket.getKeyAsNumber().longValue())
+                    .collect(Collectors.toList());
+            brandList = brandClient.getBrandByIds(longList);
+        } catch (Exception e) {
+            log.error("聚合brand失败",e);
+        }
+        return brandList;
+    }
+
+    private List<Category> parseCategoryList(LongTerms terms) {
+        List<Category> categoryList = null;
+        try {
+            List<Long> cidList = terms.getBuckets()
+                    .stream()
+                    .map(bucket -> bucket.getKeyAsNumber().longValue())
+                    .collect(Collectors.toList());
+            categoryList = categoryClient.queryCategoryNamesByIds(cidList);
+        } catch (Exception e) {
+            log.error("聚合category失败",e);
+        }
+        return categoryList;
     }
 }
