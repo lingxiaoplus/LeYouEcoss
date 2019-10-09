@@ -15,13 +15,16 @@ import com.lingxiao.vo.PageResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
+import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.Operator;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.LongTermsAggregator;
+import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -176,10 +179,9 @@ public class SearchService {
         Integer size = searchRequest.getSize();
         String key = searchRequest.getKey();
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+        QueryBuilder baseQuery = QueryBuilders.matchQuery("all", key);
         //1. 对key进行全文检索
-        queryBuilder.withQuery(
-                QueryBuilders.matchQuery("all",key)
-                        .operator(Operator.AND));
+        queryBuilder.withQuery(baseQuery);
         //2. 通过sourceFilter设置返回的结果字段,我们只需要id、skus、subTitle
         queryBuilder
                 .withSourceFilter(new FetchSourceFilter(new String[]{"id","skus","subTitle"},null))
@@ -207,7 +209,48 @@ public class SearchService {
         List<Brand> brandList = parseBrandList(aggregations.get(brandAggName));
         //获取查询的数据
         List<Goods> goodsList = result.getContent();
-        return new SearchResult(total,totalPages,goodsList,categoryList,brandList);
+
+
+        //完成规格参数聚合查询
+        List<Map<String,Object>> filters = null;
+        if (categoryList != null && categoryList.size() == 1){
+            //只有一个分类  也就是说，只有当分类确定下来之后，才能进行下一步的聚合查询
+            filters = buildSpecificationAgg(categoryList.get(0).getId(),baseQuery);  //在上面查询基础之上再进行聚合查询
+        }
+
+        return new SearchResult(total,totalPages,goodsList,categoryList,brandList,filters);
+    }
+
+    private List<Map<String,Object>> buildSpecificationAgg(Long cid, QueryBuilder baseQuery) {
+        List<Map<String,Object>> specs = new ArrayList<>();
+        //1. 查询需要聚合的规格参数  品牌/型号/机身存储等等
+        List<SpecParam> paramList = specificationClient.getGroupParamByPid(null, cid, true);
+
+        NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+        queryBuilder.withQuery(baseQuery);
+        paramList.forEach((param)->{
+            String name = param.getName();
+            //specs.内存.keyword   elasticsearch中的map是以 map.key存储的
+            //keyword是不让它分词
+            queryBuilder.addAggregation(AggregationBuilders.terms(name).field("specs."+name+".keyword"));
+        });
+        AggregatedPage<Goods> goods = elasticsearchTemplate.queryForPage(queryBuilder.build(), Goods.class);
+        Aggregations aggregations = goods.getAggregations();
+        paramList.forEach((param)->{
+            //规格参数名
+            String name = param.getName();
+            StringTerms stringTerms = aggregations.get(name);
+            List<String> options = stringTerms
+                    .getBuckets()
+                    .stream()
+                    .map(StringTerms.Bucket::getKeyAsString)//key值为 4GB, 32Gb, 64GB, 128GB ...
+                    .collect(Collectors.toList());
+            Map<String,Object> map = new HashMap<>();
+            map.put("k",name);            //k: 内存
+            map.put("options",options);   //options: [32Gb,64GB,128GB]
+            specs.add(map);               //[{k:内存, options: [32Gb,64GB,128GB]}]
+        });
+        return specs;
     }
 
     private List<Brand> parseBrandList(LongTerms terms) {

@@ -32,6 +32,7 @@ public class Goods {
     private Set<Long> price;// 价格
     @Field(type = FieldType.Keyword, index = false)
     private String skus;// List<sku>信息的json结构
-    private Map<String, Object> specs;// 可搜索的规格参数，key是参数名，值是参数值
+
+    private Map<String, Object> specs;// 可搜索的规格参数，key是参数名，值是参数值  比如 ： {内存: 4GB}
 
 }
