@@ -11,7 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service("specificationService")
 public class SpecificationService {
@@ -53,5 +57,24 @@ public class SpecificationService {
             //throw new LyException(ExceptionEnum.SELECT_GROUP_PARAM_NOT_FOUNT);
         }
         return list;
+    }
+
+    public List<SpecGroup> getGroupAndParmsByCid(Long cid) {
+        List<SpecGroup> groupList = getGroupByCid(cid);
+        //查询所有规格参数
+        List<SpecParam> paramList = getGroupParamByGid(null, cid, null);
+        //新建一个map  key为group的id  value为规格参数
+        Map<Long,List<SpecParam>> map = new HashMap<>();
+        paramList.forEach((param)->{
+            if (!map.containsKey(param.getGroupId())){
+                map.put(param.getGroupId(),new ArrayList<>());
+            }
+            map.get(param.getGroupId()).add(param);
+        });
+
+        groupList.forEach((group)->{
+            group.setParams(map.get(group.getId()));
+        });
+        return groupList;
     }
 }

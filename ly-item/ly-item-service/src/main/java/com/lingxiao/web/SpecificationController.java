@@ -36,4 +36,14 @@ public class SpecificationController {
     ){
         return ResponseEntity.ok(specificationService.getGroupParamByGid(gid,cid,searching));
     }
+
+    /**
+     * 和最上面接口的区别是，这个里面有 所有规格参数集合
+     * @param cid
+     * @return
+     */
+    @GetMapping("/group")
+    public ResponseEntity<List<SpecGroup>> getGroupAndParmsByCid(@RequestParam("cid") Long cid){
+        return ResponseEntity.ok(specificationService.getGroupAndParmsByCid(cid));
+    }
 }

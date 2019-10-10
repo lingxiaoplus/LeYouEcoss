@@ -142,4 +142,16 @@ public class GoodsService {
         stocks.forEach(stock -> stock.setStock(map.get(stock.getSku_id())));
         return skuList;
     }
+
+    public Spu getSpuById(Long id) {
+        Spu spu = spuMapper.selectByPrimaryKey(id);
+        if (spu == null){
+            throw new LyException(ExceptionEnum.GOODS_DETAIL_NOT_EXIST);
+        }
+        //查询sku
+        spu.setSkus(getSkusByPid(id));
+        //查询detail
+        spu.setSpuDetail(getGoodsDetail(id));
+        return spu;
+    }
 }

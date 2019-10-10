@@ -43,4 +43,14 @@ public class GoodsController {
     public ResponseEntity<List<Sku>> getSkusByPid(@PathVariable("sPuId") Long id){
         return ResponseEntity.ok(goodsService.getSkusByPid(id));
     }
+
+    /**
+     * 查询spu
+     * @param id
+     * @return
+     */
+    @GetMapping("/spu/{id}")
+    public ResponseEntity<Spu> getSpuById(@PathVariable("id") Long id){
+        return ResponseEntity.ok(goodsService.getSpuById(id));
+    }
 }
