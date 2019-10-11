@@ -106,7 +106,7 @@
 					<li>
 						<a href="#" th:text="${brand.name}">Apple</a>
 					</li>
-					<li class="active" th:text="${spu.title}">Apple iPhone 6s</li>
+					<li class="active" th:text="${title}">Apple iPhone 6s</li>
 				</ul>
 			</div>
 			<!--product-info-->
@@ -139,7 +139,7 @@
 					<div class="sku-name">
 						<h4>{{sku.title}}</h4>
 					</div>
-					<div class="news"><span th:utext="${spu.subTitle}">推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</span></div>
+					<div class="news"><span th:utext="${subTitle}">推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</span></div>
 					<div class="summary">
 						<div class="summary-wrap">
 							<div class="fl title"><i>价　　格</i></div>
@@ -178,7 +178,8 @@
 						</div>
 					</div>
 					<div class="clearfix choose">
-						<div id="specification" class="summary-wrap clearfix">
+						<!--       有问题！！！！！！！！！！！！！  specialSpec不是数组，怎么遍历！！ -->
+						<div id="specification" class="summary-wrap clearfix" v-if="false">
 							<dl v-for="(val, key, index) in specialSpec">
 								<dt>
 									<div class="fl title">
@@ -618,6 +619,7 @@
     Object.keys(specialSpec).forEach(k => {
         indexes[k] = 0;
 	})
+	console.log("什么东西",indexes);
 </script>
 <script>
     var itemVm = new Vue({
@@ -643,7 +645,7 @@
                 return this.sku.images ? this.sku.images.split(",") : [];
 			},
 			groups(){
-                groups.forEach(group=>{
+                /*groups.forEach(group=>{
                     group.params.forEach(param=>{
                         if (param.generic) {
                             param.v = this.genericSpec[param.id];
@@ -651,7 +653,7 @@
                             param.v = JSON.parse(this.sku.ownSpec)[param.id];
 						}
 					});
-				});
+				});*/
                 return groups;
 			}
 		},
