@@ -60,11 +60,21 @@ public class PageService {
         Context context = new Context();
         context.setVariables(loadModel(id));
         File file = new File("D:\\nginx\\static\\item", id + ".html");
+        if (file.exists()){
+            file.delete();
+        }
         try (PrintWriter writer = new PrintWriter(file,"UTF-8")){
             //生成html
             templateEngine.process("item",context,writer);
         }catch (IOException ex){
             log.error("[静态页服务 生成静态页异常！]",ex);
+        }
+    }
+
+    public void deleteHtml(Long spuId) {
+        File file = new File("D:\\nginx\\static\\item", spuId + ".html");
+        if (file.exists()){
+            file.delete();
         }
     }
 }

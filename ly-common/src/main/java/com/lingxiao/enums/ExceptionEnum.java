@@ -15,6 +15,7 @@ public enum  ExceptionEnum {
     GOODS_SKU_ADD_ERROR(500,"新增商品sku失败"),
     GOODS_SPU_DETAIL_ADD_ERROR(500,"新增商品详情失败"),
     GOODS_STOCK_ADD_ERROR(500,"新增商品库存失败"),
+    GOODS_SPU_ID_NULL_ERROR(500,"商品spu的id不能为空"),
     GOODS_STOCK_IS_EMPTY(404,"商品库存不存在"),
     GOODS_DETAIL_NOT_EXIST(404,"商品详情不存在"),
     GOODS_SKU_LIST_NOT_EXIST(404,"商品sku列表不存在"),
