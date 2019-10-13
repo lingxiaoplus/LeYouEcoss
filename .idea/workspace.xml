@@ -2,17 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bd016d7-79cb-4cb2-8708-accfeeead892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/ly-sms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/config/SmsProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-interface/ly-user-interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/ly-user-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-page/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,6 +49,10 @@
     <ignored path="$PROJECT_DIR$/search/target/" />
     <ignored path="$PROJECT_DIR$/ly-search/target/" />
     <ignored path="$PROJECT_DIR$/ly-page/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/ly-user-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/ly-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-sms/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +77,48 @@
     <favorites_list name="LeYou" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java">
+        <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="164" column="74" selection-start-line="164" selection-start-column="74" selection-end-line="164" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-sms/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java">
+        <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,10 +127,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java">
+        <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="326">
+              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,24 +148,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java">
+        <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="272" column="51" selection-start-line="272" selection-start-column="51" selection-end-line="272" selection-end-column="51" />
+            <state relative-caret-position="300">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11986#11987#0" expanded="true" />
-                <element signature="e#12035#12036#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java">
+        <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,9 +178,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -145,26 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/LeyouSearchApplication.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/web/CategoryController.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/search/client/GoodsClient.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/client/GoodsClient.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/test/java/com/lingxiao/search/client/GoodsClientTest.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/client/CategoryClient.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/test/java/com/lingxiao/search/client/CategoryClientTest.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/api/CategoryApi.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/client/BrandClient.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/client/SpecificationClient.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/repository/GoodsRepository.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/Sku.java" />
-        <option value="$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/Brand.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/test/java/com/lingxiao/search/repository/GoodsRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" />
-        <option value="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/SearchRequest.java" />
-        <option value="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/controller/SearchController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/vo/PageResult.java" />
@@ -175,7 +215,6 @@
         <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/Goods.java" />
         <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/SearchResult.java" />
         <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/LeyouGoodsWebApplication.java" />
-        <option value="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/web/GoodsController.java" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/api/GoodsApi.java" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/SpecGroup.java" />
@@ -188,7 +227,6 @@
         <option value="$PROJECT_DIR$/ly-page/src/test/java/com/lingxiao/service/PageServiceTest.java" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/ly-search/pom.xml" />
         <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" />
@@ -196,6 +234,28 @@
         <option value="$PROJECT_DIR$/ly-page/pom.xml" />
         <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" />
         <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/config/SmsProperties.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsDemo.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java" />
+        <option value="$PROJECT_DIR$/ly-sms/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/pojo/User.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java" />
+        <option value="$PROJECT_DIR$/ly-user/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java" />
+        <option value="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -258,14 +318,23 @@
           <item name="ly-upload" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ly-user-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ly-user-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="725" />
-    <option name="y" value="95" />
-    <option name="width" value="1818" />
+    <option name="x" value="295" />
+    <option name="y" value="401" />
+    <option name="width" value="1819" />
     <option name="height" value="1015" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -286,6 +355,104 @@
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
               <item name="ly-item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,62 +518,162 @@
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
               <item name="mq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -416,7 +683,8 @@
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -426,7 +694,8 @@
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-page" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -434,58 +703,10 @@
             <path>
               <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeYou" type="462c0819:PsiDirectoryNode" />
-              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -502,7 +723,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570895129305" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570974716171" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search" />
@@ -523,16 +744,17 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.lingxiao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ideaProject\LeYou\ly-page\src\main\java\com\lingxiao" />
-      <recent name="D:\ideaProject\LeYou\ly-page\src\main\resources\templates" />
-      <recent name="D:\ideaProject\LeYou\ly-common\src\main\java\com\lingxiao\common" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lingxiao" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\LeYou\ly-sms\src\main\java\com\lingxiao\sms" />
+      <recent name="D:\ideaProject\LeYou\ly-page\src\main\java\com\lingxiao" />
+      <recent name="D:\ideaProject\LeYou\ly-page\src\main\resources\templates" />
+      <recent name="D:\ideaProject\LeYou\ly-common\src\main\java\com\lingxiao\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -552,7 +774,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LyGoodsDetail">
+  <component name="RunManager" selected="Spring Boot.LeyouUserApplication">
     <configuration name="CategoryClientTest.getCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ly-search" />
       <extension name="coverage">
@@ -564,38 +786,6 @@
       <option name="PACKAGE_NAME" value="com.lingxiao.search.client" />
       <option name="MAIN_CLASS_NAME" value="com.lingxiao.search.client.CategoryClientTest" />
       <option name="METHOD_NAME" value="getCategory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FdfsTest.testUpload (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ly-upload" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lingxiao.upload.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lingxiao.upload" />
-      <option name="MAIN_CLASS_NAME" value="com.lingxiao.upload.FdfsTest" />
-      <option name="METHOD_NAME" value="testUpload" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FdfsTest.testUploadAndCrtThum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ly-upload" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lingxiao.upload.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lingxiao.upload" />
-      <option name="MAIN_CLASS_NAME" value="com.lingxiao.upload.FdfsTest" />
-      <option name="METHOD_NAME" value="testUploadAndCrtThum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -633,9 +823,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmsTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ly-sms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.sms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lingxiao.sms" />
+      <option name="MAIN_CLASS_NAME" value="com.lingxiao.sms.SmsTest" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeyouSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ly-search" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ly-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouUserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -700,9 +919,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-sms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.SmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.FdfsTest.testUpload (2)" />
-      <item itemvalue="JUnit.FdfsTest.testUploadAndCrtThum" />
       <item itemvalue="JUnit.CategoryClientTest.getCategory" />
       <item itemvalue="JUnit.GoodsRepositoryTest.createIndex" />
       <item itemvalue="JUnit.GoodsRepositoryTest.inputGoods" />
@@ -712,14 +936,17 @@
       <item itemvalue="Spring Boot.LyRegistry" />
       <item itemvalue="Spring Boot.LyUploadApplication" />
       <item itemvalue="Spring Boot.LeyouSearchApplication" />
+      <item itemvalue="Spring Boot.SmsApplication" />
+      <item itemvalue="JUnit.SmsTest.sendMessage" />
+      <item itemvalue="Spring Boot.LeyouUserApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LeyouUserApplication" />
+        <item itemvalue="JUnit.SmsTest.sendMessage" />
         <item itemvalue="JUnit.GoodsRepositoryTest.inputGoods" />
         <item itemvalue="JUnit.GoodsRepositoryTest.createIndex" />
         <item itemvalue="JUnit.CategoryClientTest.getCategory" />
-        <item itemvalue="JUnit.FdfsTest.testUploadAndCrtThum" />
-        <item itemvalue="JUnit.FdfsTest.testUpload (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -755,7 +982,8 @@
       <workItem from="1570629901057" duration="5599000" />
       <workItem from="1570718687104" duration="3017000" />
       <workItem from="1570803986087" duration="5447000" />
-      <workItem from="1570892388740" duration="2717000" />
+      <workItem from="1570892388740" duration="3720000" />
+      <workItem from="1570952976391" duration="13481000" />
     </task>
     <task id="LOCAL-00001" summary="完成elasticsearch的基本使用">
       <created>1570461797579</created>
@@ -792,31 +1020,17 @@
       <option name="project" value="LOCAL" />
       <updated>1570809296134</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加rabbitmq">
+      <created>1570895186733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570895186733</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 19m 29s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 22m 27s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 26m 34s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 29m 18s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 34m 18s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 37m 58s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 42m 12s.xml">
-      <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 42m 59s.xml">
       <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
     </history-entry>
@@ -826,15 +1040,35 @@
     <history-entry file="GoodsRepositoryTest_inputGoods - 2019.10.07 at 21h 54m 55s.xml">
       <configuration name="GoodsRepositoryTest.inputGoods" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 25m 16s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 25m 36s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 30m 41s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 32m 47s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 34m 16s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 44m 04s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.13 at 17h 44m 25s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92455000" />
+    <option name="totallyTimeSpent" value="106939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.22968906" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.2326981" />
       <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -857,13 +1091,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.45971075" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.45971075" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24974924" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.31344032" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.31344032" />
       <window_info anchor="right" id="Database" order="6" weight="0.32948846" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -915,367 +1149,14 @@
     <MESSAGE value="完成规格参数聚合查询" />
     <MESSAGE value="查询所有规格参数集合" />
     <MESSAGE value="给商品详情提供数据，添加页面静态化方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="给商品详情提供数据，添加页面静态化方法" />
+    <MESSAGE value="添加rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加rabbitmq" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1626">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/vo/PageResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.6.10/elasticsearch-5.6.10.jar!/org/elasticsearch/search/aggregations/bucket/terms/LongTermsAggregator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/mapper/BrandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.6.10/elasticsearch-5.6.10.jar!/org/elasticsearch/search/aggregations/Aggregation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.elasticsearch.search.aggregations.Aggregation">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.elasticsearch.search.aggregations.Aggregation</OriginalElement>
-          <nodes>
-            <node x="" y="">org.elasticsearch.common.xcontent.ToXContent.MapParams</node>
-            <node x="" y="">org.elasticsearch.common.xcontent.ToXContent.Params</node>
-            <node x="" y="">org.elasticsearch.common.xcontent.ToXContent</node>
-            <node x="" y="">org.elasticsearch.search.aggregations.Aggregation</node>
-            <node x="" y="">org.elasticsearch.search.aggregations.Aggregation.CommonFields</node>
-            <node x="" y="">org.elasticsearch.common.xcontent.ToXContent.DelegatingMapParams</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="79.0" y="293.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/client/BrandClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.6.10/elasticsearch-5.6.10-sources.jar!/org/elasticsearch/search/aggregations/Aggregation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/SearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/api/BrandApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/BrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="92" column="36" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/web/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/ly-page.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/LeyouGoodsWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/api/GoodsApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/Spu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/api/SpecificationApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="65" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/SpecGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/SpecificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/web/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/SpecParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/pojo/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/client/BrandClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/client/CategoryClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/client/SpecificationClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/client/GoodsClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/web/SpecificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/test/java/com/lingxiao/service/PageServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/web/GoodsDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/src/main/java/com/lingxiao/pojo/SpuDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-page/src/main/resources/templates/item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16400">
-          <caret line="656" column="24" selection-start-line="656" selection-start-column="24" selection-end-line="656" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.5.RELEASE/spring-amqp-2.0.5.RELEASE.jar!/org/springframework/amqp/core/AmqpTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.5.RELEASE/spring-amqp-2.0.5.RELEASE-sources.jar!/org/springframework/amqp/core/AmqpTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="164" column="74" selection-start-line="164" selection-start-column="74" selection-end-line="164" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.0.5.RELEASE/spring-rabbit-2.0.5.RELEASE.jar!/org/springframework/amqp/rabbit/annotation/QueueBinding.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1287,23 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1333,10 +1197,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ly-page/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="551">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1345,8 +1219,333 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state relative-caret-position="12">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/LeyouSearchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/2.0.4.RELEASE/spring-boot-test-2.0.4.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/src/test/java/com/lingxiao/search/repository/GoodsRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/config/SmsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="297" column="18" lean-forward="true" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/4.1.0/aliyun-java-sdk-core-4.1.0.jar!/com/aliyuncs/AcsResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/4.1.0/aliyun-java-sdk-core-4.1.0.jar!/com/aliyuncs/CommonResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/2.0.1.RELEASE/spring-cloud-commons-2.0.1.RELEASE.jar!/org/springframework/cloud/client/discovery/EnableDiscoveryClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-upload/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/exception/LyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/NumberUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/tk/mybatis/mapper-spring-boot-starter/2.1.5/mapper-spring-boot-starter-2.1.5.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4217">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/IdWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2667">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

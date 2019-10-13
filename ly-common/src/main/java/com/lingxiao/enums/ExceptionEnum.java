@@ -25,7 +25,9 @@ public enum  ExceptionEnum {
     GROUP_SAVE_ERROR(500,"商品规格组没有找到"),
     UPLOAD_FILE_ERROR(500,"文件上传失败"),
     FILE_TYPE_NOT_SUPPORT(500,"文件格式不支持"),
-    ILLEGA_ARGUMENT(500,"传递过来的参数不正确")
+    ILLEGA_ARGUMENT(500,"传递过来的参数不正确"),
+    ILLEGA_PHONE_VERIFY_CODE(500,"验证码不正确"),
+    USER_REGIST_ERROR(500,"用户注册失败")
     ;
     private int code;
     private String msg;

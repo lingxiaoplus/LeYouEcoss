@@ -1,12 +1,13 @@
 server:
-  port: 8081
+  port: 8085
 spring:
   application:
-    name: item-service  # 服务名称
+    name: user-service
   datasource:
-    url: jdbc:mysql://localhost:3306/leyou
+    url: jdbc:mysql://127.0.0.1:3306/leyou
     username: root
     password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
   rabbitmq:
     host: 116.85.38.81
     port: 5672
@@ -19,16 +20,18 @@ spring:
         initial-interval: 10000ms
         max-interval: 30000ms
         multiplier: 2
-      exchange: ly.item.exchange
+      exchange: ly.sms.exchange
     publisher-confirms: true
+  redis:
+    host: 116.85.38.81
+    port: 6379
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka   # eureka中拉取服务列表
+      defaultZone: http://127.0.0.1:10086/eureka
   instance:
-    prefer-ip-address: true
-    ip-address: 127.0.0.1  # 保证获取到的地址是ip地址，而不是host
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
 
 mybatis:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.lingxiao.pojo

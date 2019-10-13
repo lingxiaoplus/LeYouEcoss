@@ -13,7 +13,10 @@
         <module name="ly-page" />
         <module name="ly-registry" />
         <module name="ly-search" />
+        <module name="ly-sms" />
         <module name="ly-upload" />
+        <module name="ly-user-interface" />
+        <module name="ly-user-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -27,7 +30,11 @@
       <module name="ly-page" options="-parameters" />
       <module name="ly-registry" options="-parameters" />
       <module name="ly-search" options="-parameters" />
+      <module name="ly-sms" options="-parameters" />
       <module name="ly-upload" options="-parameters" />
+      <module name="ly-user" options="-parameters" />
+      <module name="ly-user-interface" options="-parameters" />
+      <module name="ly-user-service" options="-parameters" />
     </option>
   </component>
 </project>

@@ -59,7 +59,7 @@ public class PageService {
         //thymeleaf的上下文  用于管理数据
         Context context = new Context();
         context.setVariables(loadModel(id));
-        File file = new File("D:\\nginx\\static\\item", id + ".html");
+        File file = new File("D:\\static\\item", id + ".html");
         if (file.exists()){
             file.delete();
         }
@@ -72,7 +72,7 @@ public class PageService {
     }
 
     public void deleteHtml(Long spuId) {
-        File file = new File("D:\\nginx\\static\\item", spuId + ".html");
+        File file = new File("D:\\static\\item", spuId + ".html");
         if (file.exists()){
             file.delete();
         }

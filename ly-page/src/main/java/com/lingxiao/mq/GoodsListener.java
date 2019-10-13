@@ -25,6 +25,7 @@ public class GoodsListener {
         if (spuId == null){
             return;
         }
+        System.out.println("新建静态页面");
         //新建静态页面
         pageService.createHtml(spuId);
     }
@@ -40,6 +41,7 @@ public class GoodsListener {
         if (spuId == null){
             return;
         }
+        System.out.println("删除静态页面");
         pageService.deleteHtml(spuId);
     }
 }
