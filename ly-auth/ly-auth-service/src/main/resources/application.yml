@@ -11,11 +11,15 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 5 # 每隔5秒发送一次心跳
     lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期
+    prefer-ip-address: true
+    ip-address: 127.0.0.1  # 保证获取到的地址是ip地址，而不是host
+
+
 ly:
   jwt:
     secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
-    pubKeyPath: D:\rsakey\rsa.pub  # 公钥地址
-    priKeyPath: D:\rsakey\rsa.pri  # 私钥地址
+    pubKeyPath: D:\\rsakey\\rsa.pub  # 公钥地址
+    priKeyPath: D:\\rsakey\\rsa.pri  # 私钥地址
     expire: 30 # 过期时间,单位分钟
     cookieName: LEYOU_COOKIE # cookie的名字
     cookieMaxAge: 30 # cookie的有效时长

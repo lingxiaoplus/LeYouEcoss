@@ -18,6 +18,8 @@ zuul:
     search-service: /search/**
     user-service: /user/** # 用户微服务
     auth-service: /auth/** # 授权中心微服务
+  add-host-header: true  #携带请求本身的头信息
+  sensitive-headers:  # 把敏感头设置为null, 不然set-cookie无效
 hystrix:
   command:
     default:
@@ -30,3 +32,16 @@ ribbon:
   ReadTimeout: 3500 # ribbon读取超时时长
   MaxAutoRetries: 0 # 当前服务重试次数
   MaxAutoRetriesNextServer: 0 # 切换服务重试次数
+
+ly:
+  jwt:
+    pubKeyPath: D:\\rsakey\\rsa.pub  # 公钥地址
+    cookieName: LEYOU_COOKIE # cookie的名字
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item

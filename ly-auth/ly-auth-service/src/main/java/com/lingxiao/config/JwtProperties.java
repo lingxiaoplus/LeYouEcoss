@@ -26,7 +26,7 @@ public class JwtProperties {
     private PublicKey publicKey;
     private PrivateKey privateKey;
     private String cookieName;
-    private String cookieMaxAge;
+    private int cookieMaxAge;
 
     @PostConstruct
     public void init(){
