@@ -280,4 +280,14 @@ public class SearchService {
         }
         return categoryList;
     }
+
+    public void createOrUpdateIndexs(Long spuId) {
+        Spu spu = goodsClient.getSpuById(spuId);
+        Goods goods = createGoodsData(spu);
+        goodsRepository.save(goods);
+    }
+
+    public void deleteIndexs(Long spuId){
+        goodsRepository.deleteById(spuId);
+    }
 }

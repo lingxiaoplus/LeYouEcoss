@@ -8,6 +8,7 @@ import com.lingxiao.mapper.*;
 import com.lingxiao.pojo.*;
 import com.lingxiao.vo.PageResult;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,6 +33,9 @@ public class GoodsService {
     private StockMapper stockMapper;
     @Autowired
     private SkuMapper skuMapper;
+
+    @Autowired
+    private AmqpTemplate amqpTemplate;
 
     public PageResult<Spu> getGoodsByPage(Integer pageNum, Integer rows, Boolean saleable, String key) {
         PageHelper.startPage(pageNum,rows);
@@ -106,6 +110,52 @@ public class GoodsService {
         if (stockCount != stocks.size()){
             throw new LyException(ExceptionEnum.GOODS_STOCK_ADD_ERROR);
         }
+
+        //发送rabbitmq消息
+        amqpTemplate.convertAndSend("item.insert",spu.getId());
+    }
+
+
+    @Transactional
+    public void updateGoods(Spu spu) {
+        if (spu.getId() == null){
+            throw new LyException(ExceptionEnum.GOODS_SPU_ID_NULL_ERROR);
+        }
+
+        Sku sku = new Sku();
+        sku.setSpuId(spu.getId());
+        List<Sku> skus = skuMapper.select(sku);
+        if (!CollectionUtils.isEmpty(skus)){
+            skuMapper.delete(sku);
+            List<Long> ids = skus.stream().map(Sku::getId).collect(Collectors.toList());
+            stockMapper.deleteByIdList(ids);
+        }
+
+        //spu的这些值不修改
+        spu.setSaleable(null);
+        spu.setValid(null);
+        spu.setCreateTime(null);
+        spu.setLastUpdateTime(new Date());
+
+
+        int spuCount = spuMapper.updateByPrimaryKeySelective(spu);
+        if (spuCount != 1){
+            throw new LyException(ExceptionEnum.GOODS_SPU_ADD_ERROR);
+        }
+
+        int detailCount = spuDetailMapper.updateByPrimaryKeySelective(spu.getSpuDetail());
+        if (detailCount != 1){
+            throw new LyException(ExceptionEnum.GOODS_SPU_DETAIL_ADD_ERROR);
+        }
+
+        //新增sku和stock
+        saveSkusAndStock(spu);
+        //发送rabbitmq消息
+        amqpTemplate.convertAndSend("item.update",spu.getId());
+    }
+
+    private void saveSkusAndStock(Spu spu) {
+
     }
 
     public SpuDetail getGoodsDetail(Long id) {

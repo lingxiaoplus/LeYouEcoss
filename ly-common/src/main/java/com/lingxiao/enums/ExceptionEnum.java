@@ -15,6 +15,7 @@ public enum  ExceptionEnum {
     GOODS_SKU_ADD_ERROR(500,"新增商品sku失败"),
     GOODS_SPU_DETAIL_ADD_ERROR(500,"新增商品详情失败"),
     GOODS_STOCK_ADD_ERROR(500,"新增商品库存失败"),
+    GOODS_SPU_ID_NULL_ERROR(500,"商品spu的id不能为空"),
     GOODS_STOCK_IS_EMPTY(404,"商品库存不存在"),
     GOODS_DETAIL_NOT_EXIST(404,"商品详情不存在"),
     GOODS_SKU_LIST_NOT_EXIST(404,"商品sku列表不存在"),
@@ -24,7 +25,9 @@ public enum  ExceptionEnum {
     GROUP_SAVE_ERROR(500,"商品规格组没有找到"),
     UPLOAD_FILE_ERROR(500,"文件上传失败"),
     FILE_TYPE_NOT_SUPPORT(500,"文件格式不支持"),
-    ILLEGA_ARGUMENT(500,"传递过来的参数不正确")
+    ILLEGA_ARGUMENT(500,"传递过来的参数不正确"),
+    ILLEGA_PHONE_VERIFY_CODE(500,"验证码不正确"),
+    USER_REGIST_ERROR(500,"用户注册失败")
     ;
     private int code;
     private String msg;

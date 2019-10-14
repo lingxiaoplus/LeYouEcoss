@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bd016d7-79cb-4cb2-8708-accfeeead892" name="Default Changelist" comment="添加jwt用户授权中心">
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/ly-auth-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/pojo/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtConstans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/ObjectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/RsaUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-common/src/test/java/com/lingxiao/jwt/JwtTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/ly-auth-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/LeyouAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/web/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/ly-auth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-page/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-page/target/classes/templates/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-search/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/config/SmsProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-sms/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-interface/src/main/java/com/lingxiao/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/src/test/java/com/lingxiao/Md5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/ly-user-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ly-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-item/ly-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-item/ly-item-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-page/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/ly-registry/target/" />
+    <ignored path="$PROJECT_DIR$/ly-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/ly-item-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/ly-item-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-common/target/" />
+    <ignored path="$PROJECT_DIR$/ly-upload/target/" />
+    <ignored path="$PROJECT_DIR$/search/target/" />
+    <ignored path="$PROJECT_DIR$/ly-search/target/" />
+    <ignored path="$PROJECT_DIR$/ly-page/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/ly-user-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly-user/ly-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-sms/target/" />
+    <ignored path="$PROJECT_DIR$/ly-auth/target/" />
+    <ignored path="$PROJECT_DIR$/ly-auth/ly-auth-common/target/" />
+    <ignored path="$PROJECT_DIR$/ly-auth/ly-auth-service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="LeYou" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/LeyouAuthApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/RsaUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/config/JwtProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/web/AuthController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/service/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+              <folding>
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring-cloud-starter-netflix-eureka-server</find>
+      <find>parent</find>
+      <find>getBrandById</find>
+      <find>getBrandByIds</find>
+      <find>getGroupParamByPid</find>
+      <find>机身颜色</find>
+      <find>index</find>
+      <find>packingList</find>
+      <find>tb_spu_deta</find>
+      <find>spuDetail</find>
+      <find>specialSpec</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/client/CategoryClient.java" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/web/GoodsDetailController.java" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/resources/templates/item.html" />
+        <option value="$PROJECT_DIR$/ly-page/src/test/java/com/lingxiao/service/PageServiceTest.java" />
+        <option value="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/ly-search/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search/mq/GoodsListener.java" />
+        <option value="$PROJECT_DIR$/ly-page/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/mq/GoodsListener.java" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/java/com/lingxiao/service/PageService.java" />
+        <option value="$PROJECT_DIR$/ly-page/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-search/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/config/SmsProperties.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsDemo.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java" />
+        <option value="$PROJECT_DIR$/ly-sms/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/pojo/User.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java" />
+        <option value="$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java" />
+        <option value="$PROJECT_DIR$/ly-user/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/test/java/com/lingxiao/Md5Test.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java" />
+        <option value="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/MD5Util.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-interface/src/main/java/com/lingxiao/pojo/User.java" />
+        <option value="$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java" />
+        <option value="$PROJECT_DIR$/ly-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/LeyouAuthApplication.java" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/pojo/UserInfo.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtConstans.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-common/src/test/java/com/lingxiao/jwt/JwtTest.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtUtils.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/service/AuthService.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/config/JwtProperties.java" />
+        <option value="$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/web/AuthController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ly-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ly-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="295" />
+    <option name="y" value="401" />
+    <option name="width" value="1819" />
+    <option name="height" value="1015" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-search" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lingxiao" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeYouEcoss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeYouEcoss" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-sms" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571048086774" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/ly-search/src/main/java/com/lingxiao/search" />
+    <property name="last_opened_file_path" value="D:/vue project/leyou-portal" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lingxiao.jwt" />
+      <recent name="com.lingxiao.common" />
+      <recent name="com.lingxiao.service" />
+      <recent name="com.lingxiao.search.repository" />
+      <recent name="com.lingxiao.search.client" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lingxiao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA Project\LeYouEcoss\ly-auth\ly-auth-common\src\main\java\com\lingxiao\utlis" />
+      <recent name="D:\IntelliJ IDEA Project\LeYouEcoss\ly-auth\ly-auth-common\src\main\java\com\lingxiao\pojo" />
+      <recent name="D:\ideaProject\LeYou\ly-sms\src\main\java\com\lingxiao\sms" />
+      <recent name="D:\ideaProject\LeYou\ly-page\src\main\java\com\lingxiao" />
+      <recent name="D:\ideaProject\LeYou\ly-page\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lingxiao.pojo" />
+      <recent name="com.lingxiao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.22289157" />
+  </component>
+  <component name="RunManager" selected="JUnit.JwtTest.testParseToken">
+    <configuration name="JwtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ly-auth-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lingxiao.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.lingxiao.jwt.JwtTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testGenerateToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ly-auth-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lingxiao.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.lingxiao.jwt.JwtTest" />
+      <option name="METHOD_NAME" value="testGenerateToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testGetRsa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ly-auth-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lingxiao.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.lingxiao.jwt.JwtTest" />
+      <option name="METHOD_NAME" value="testGetRsa" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testParseToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ly-auth-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lingxiao.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.lingxiao.jwt.JwtTest" />
+      <option name="METHOD_NAME" value="testParseToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ly-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lingxiao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.gateway.LyGateway" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.lingxiao.gateway.LyGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyGoodsDetail" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-page" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LeyouGoodsWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LyItemApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.lingxiao.LyItemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyRegistry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LyRegistry" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyRegistry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.lingxiao.LyRegistry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyUploadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-upload" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.LyUploadApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-sms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lingxiao.SmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.LyGoodsDetail" />
+      <item itemvalue="Spring Boot.LyGateway" />
+      <item itemvalue="Spring Boot.LyItemApplication" />
+      <item itemvalue="Spring Boot.LyRegistry" />
+      <item itemvalue="Spring Boot.LyUploadApplication" />
+      <item itemvalue="Spring Boot.LeyouSearchApplication" />
+      <item itemvalue="Spring Boot.SmsApplication" />
+      <item itemvalue="Spring Boot.LeyouUserApplication" />
+      <item itemvalue="Spring Boot.LeyouAuthApplication" />
+      <item itemvalue="JUnit.JwtTest.testGetRsa" />
+      <item itemvalue="JUnit.JwtTest" />
+      <item itemvalue="JUnit.JwtTest.testGenerateToken" />
+      <item itemvalue="JUnit.JwtTest.testParseToken" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JwtTest.testParseToken" />
+        <item itemvalue="JUnit.JwtTest.testGenerateToken" />
+        <item itemvalue="JUnit.JwtTest" />
+        <item itemvalue="JUnit.JwtTest.testGetRsa" />
+        <item itemvalue="Spring Boot.LeyouUserApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bd016d7-79cb-4cb2-8708-accfeeead892" name="Default Changelist" comment="" />
+      <created>1569763247596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569763247596</updated>
+      <workItem from="1569763254054" duration="6488000" />
+      <workItem from="1569937924514" duration="1511000" />
+      <workItem from="1569940074768" duration="1232000" />
+      <workItem from="1569999002676" duration="10363000" />
+      <workItem from="1570066873302" duration="69000" />
+      <workItem from="1570066946747" duration="1180000" />
+      <workItem from="1570068132296" duration="2892000" />
+      <workItem from="1570100008667" duration="2743000" />
+      <workItem from="1570153231729" duration="15418000" />
+      <workItem from="1570252668367" duration="7254000" />
+      <workItem from="1570339251470" duration="8273000" />
+      <workItem from="1570446097096" duration="13584000" />
+      <workItem from="1570545550065" duration="4668000" />
+      <workItem from="1570629901057" duration="5599000" />
+      <workItem from="1570718687104" duration="3017000" />
+      <workItem from="1570803986087" duration="5447000" />
+      <workItem from="1570892388740" duration="3720000" />
+      <workItem from="1570952976391" duration="13481000" />
+      <workItem from="1571017314470" duration="20180000" />
+    </task>
+    <task id="LOCAL-00001" summary="完成elasticsearch的基本使用">
+      <created>1570461797579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570461797579</updated>
+    </task>
+    <task id="LOCAL-00002" summary="对搜索字段进行聚合返回，修改maven镜像为阿里镜像">
+      <created>1570549835010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570549835010</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完成规格参数聚合查询">
+      <created>1570639473050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570639473050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="查询所有规格参数集合">
+      <created>1570721627604</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570721627604</updated>
+    </task>
+    <task id="LOCAL-00005" summary="给商品详情提供数据，添加页面静态化方法">
+      <created>1570809296134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570809296134</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加rabbitmq">
+      <created>1570895186733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570895186733</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Md5Test_createPassword - 2019.10.14 at 11h 03m 57s.xml">
+      <configuration name="Md5Test.createPassword" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Md5Test_createPassword - 2019.10.14 at 11h 43m 57s.xml">
+      <configuration name="Md5Test.createPassword" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SmsTest_sendMessage - 2019.10.14 at 13h 08m 34s.xml">
+      <configuration name="SmsTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testGetRsa - 2019.10.14 at 15h 23m 49s.xml">
+      <configuration name="JwtTest.testGetRsa" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest - 2019.10.14 at 15h 24m 21s.xml">
+      <configuration name="JwtTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testGenerateToken - 2019.10.14 at 15h 31m 36s.xml">
+      <configuration name="JwtTest.testGenerateToken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testParseToken - 2019.10.14 at 15h 32m 05s.xml">
+      <configuration name="JwtTest.testParseToken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testParseToken - 2019.10.14 at 15h 32m 14s.xml">
+      <configuration name="JwtTest.testParseToken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testParseToken - 2019.10.14 at 15h 32m 27s.xml">
+      <configuration name="JwtTest.testParseToken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_testParseToken - 2019.10.14 at 15h 33m 07s.xml">
+      <configuration name="JwtTest.testParseToken" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="127119000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.21965629" />
+      <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info id="Web" order="7" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285124" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47032475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32698768" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3281075" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.45912653" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24974924" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.31310418" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32921588" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32948846" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.21965629" />
+      <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info id="Web" order="7" sideWeight="0.50206614" side_tool="true" weight="0.21865597" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285124" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47032475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32698768" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3281075" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.45912653" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24974924" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.31310418" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32921588" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32948846" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成elasticsearch的基本使用" />
+    <MESSAGE value="对搜索字段进行聚合返回，修改maven镜像为阿里镜像" />
+    <MESSAGE value="完成规格参数聚合查询" />
+    <MESSAGE value="查询所有规格参数集合" />
+    <MESSAGE value="给商品详情提供数据，添加页面静态化方法" />
+    <MESSAGE value="添加rabbitmq" />
+    <MESSAGE value="添加jwt用户授权中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加jwt用户授权中心" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/api/SendSmsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/SmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/SmsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/lingxiao/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/tk/mybatis/mapper-spring-boot-starter/2.1.5/mapper-spring-boot-starter-2.1.5.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/java/com/lingxiao/gateway/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/IdWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2667">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/LeyouUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/java/com/lingxiao/sms/mq/SendMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-item/ly-item-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/test/java/com/lingxiao/Md5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-interface/src/main/java/com/lingxiao/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/enums/ExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-sms/src/test/java/com/lingxiao/sms/SmsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="28" column="73" lean-forward="true" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-user/ly-user-service/src/main/java/com/lingxiao/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/pojo/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtConstans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/ObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/security/PublicKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0.jar!/io/jsonwebtoken/JwtBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0-sources.jar!/io/jsonwebtoken/JwtBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="396" column="11" selection-start-line="396" selection-start-column="11" selection-end-line="396" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/2.0.4.RELEASE/spring-boot-test-2.0.4.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/2.0.4.RELEASE/spring-boot-starter-test-2.0.4.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-search/src/test/java/com/lingxiao/search/repository/GoodsRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/RsaUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/LeyouAuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar!/org/joda/time/DateTime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="301" column="31" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/test/java/com/lingxiao/jwt/JwtTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/service/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-common/src/main/java/com/lingxiao/utlis/JwtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/config/JwtProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/com/lingxiao/common/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="148" column="32" lean-forward="true" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-auth/ly-auth-service/src/main/java/com/lingxiao/web/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ly-upload</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
