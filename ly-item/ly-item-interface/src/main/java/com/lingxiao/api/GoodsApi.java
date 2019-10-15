@@ -24,4 +24,6 @@ public interface GoodsApi {
     @GetMapping("/spu/{id}")
     Spu getSpuById(@PathVariable("id") Long id);
 
+    @GetMapping("/sku/{id}")
+    Sku getSkuById(@PathVariable("id") Long id);
 }

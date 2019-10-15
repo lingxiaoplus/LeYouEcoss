@@ -167,6 +167,11 @@ public class GoodsService {
         return spuDetail;
     }
 
+    /**
+     * 通过spu的id获取一组sku
+     * @param id
+     * @return
+     */
     public List<Sku> getSkusByPid(Long id) {
         Sku sku = new Sku();
         sku.setSpuId(id);
@@ -191,6 +196,14 @@ public class GoodsService {
         Map<Long, Integer> map = stocks.stream().collect(Collectors.toMap(Stock::getSku_id, Stock::getStock));
         stocks.forEach(stock -> stock.setStock(map.get(stock.getSku_id())));
         return skuList;
+    }
+
+    public Sku getSkuById(Long id){
+        Sku sku = skuMapper.selectByPrimaryKey(id);
+        if (sku == null){
+            throw new LyException(ExceptionEnum.GOODS_SKU_LIST_NOT_EXIST);
+        }
+        return sku;
     }
 
     public Spu getSpuById(Long id) {

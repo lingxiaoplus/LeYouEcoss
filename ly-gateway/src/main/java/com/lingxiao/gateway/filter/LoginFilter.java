@@ -23,16 +23,29 @@ public class LoginFilter extends ZuulFilter {
     private JwtProperties jwtProperties;
     @Autowired
     private FilterProperties filterProperties;
+
+    /**
+     * 设置返回值的filter类型
+     * @return  pre route post error
+     */
     @Override
     public String filterType() {
         return "pre";
     }
 
+    /**
+     * 设定filter的执行顺序
+     * @return
+     */
     @Override
     public int filterOrder() {
         return 5;
     }
 
+    /**
+     * 是否执行该filter
+     * @return
+     */
     @Override
     public boolean shouldFilter() {
         RequestContext context = RequestContext.getCurrentContext();
@@ -48,13 +61,17 @@ public class LoginFilter extends ZuulFilter {
         return true;
     }
 
+    /**
+     * 核心执行逻辑   使用公钥进行鉴权，而不是把请求转发到授权中心进行判断  避免过高得网络请求
+     * @return
+     * @throws ZuulException
+     */
     @Override
     public Object run() throws ZuulException {
         //获取上下文
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         String token = CookieUtils.getCookieValue(request, jwtProperties.getCookieName());
-
         try {
             //校验通过，什么都不做
             JwtUtils.getInfoFromToken(token,jwtProperties.getPublicKey());
