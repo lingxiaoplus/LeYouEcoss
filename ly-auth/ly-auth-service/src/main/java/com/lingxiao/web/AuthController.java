@@ -49,6 +49,7 @@ public class AuthController {
             HttpServletResponse response
     ){
         if (StringUtils.isBlank(token)){
+            //token = "eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MzAsInVzZXJuYW1lIjoibGV5b3UiLCJleHAiOjE1NzExOTIyNjR9.GQ1f6MjFc7z0BYYkmS4ggmQ6KdDx2oS8wzlBCG_KQpqZ4ZgeMUr_0iODVCblNcD6AHPnkU3VGyIh4FqxXU02V8oXR73iw_IYAdyw1r8oYCbqZgYCZ4ee_MknpLaY8oIy6ra8DXqlfTLTBUNEoFrWXmTy3lhxGWYFJjB9IIWE_YY";
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
         try {
