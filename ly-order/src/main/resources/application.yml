@@ -23,3 +23,6 @@ ly:
   jwt:
     pubKeyPath: D:\\rsakey\\rsa.pub  # 公钥地址
     cookieName: LEYOU_COOKIE # cookie的名字
+  worker:
+    workerId: 1
+    datacenterId: 1
