@@ -1,5 +1,6 @@
 package com.lingxiao.web;
 
+import com.lingxiao.dto.CartDto;
 import com.lingxiao.pojo.Sku;
 import com.lingxiao.pojo.Spu;
 import com.lingxiao.pojo.SpuDetail;
@@ -62,5 +63,25 @@ public class GoodsController {
     @GetMapping("/sku/{id}")
     public ResponseEntity<Sku> getSkuById(@PathVariable("id") Long id){
         return ResponseEntity.ok(goodsService.getSkuById(id));
+    }
+
+    /**
+     * 查询skuList
+     * @param ids
+     * @return
+     */
+    @GetMapping("/sku/{ids}")
+    public ResponseEntity<List<Sku>> getSkuListByIds(@PathVariable("ids") List<Long> ids){
+        return ResponseEntity.ok(goodsService.getSkuListByIds(ids));
+    }
+
+    /**
+     * 减少库存
+     * @return
+     */
+    @PostMapping("/stock/decrease")
+    public ResponseEntity<Void> decreaseStock(@RequestBody List<CartDto> cartList){
+        goodsService.decreaseStock(cartList);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

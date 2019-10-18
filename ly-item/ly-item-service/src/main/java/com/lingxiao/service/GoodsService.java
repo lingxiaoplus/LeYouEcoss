@@ -2,6 +2,7 @@ package com.lingxiao.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.lingxiao.dto.CartDto;
 import com.lingxiao.enums.ExceptionEnum;
 import com.lingxiao.exception.LyException;
 import com.lingxiao.mapper.*;
@@ -216,5 +217,24 @@ public class GoodsService {
         //查询detail
         spu.setSpuDetail(getGoodsDetail(id));
         return spu;
+    }
+
+    public List<Sku> getSkuListByIds(List<Long> ids) {
+        List<Sku> skus = skuMapper.selectByIdList(ids);
+        if (CollectionUtils.isEmpty(skus)){
+            throw new LyException(ExceptionEnum.GOODS_SKU_LIST_NOT_EXIST);
+        }
+        return skus;
+    }
+
+    @Transactional
+    public void decreaseStock(List<CartDto> cartList) {
+        for (CartDto cartDto : cartList) {
+            //减库存  这里不加锁  而是执行sql语句判断 因为加锁只能有一个线程使用，效率低
+            int count = stockMapper.decreaseStock(cartDto.getNum(),cartDto.getSkuId());
+            if (count != 1){
+                throw new LyException(ExceptionEnum.STOCK_NOT_ENOUGH);
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.lingxiao.api;
 
+import com.lingxiao.dto.CartDto;
 import com.lingxiao.pojo.Sku;
 import com.lingxiao.pojo.Spu;
 import com.lingxiao.pojo.SpuDetail;
@@ -26,4 +27,10 @@ public interface GoodsApi {
 
     @GetMapping("/sku/{id}")
     Sku getSkuById(@PathVariable("id") Long id);
+
+    @GetMapping("/sku/{ids}")
+    List<Sku> getSkuListByIds(@PathVariable("ids") List<Long> ids);
+
+    @PostMapping("/stock/decrease")
+    void decreaseStock(@RequestBody List<CartDto> cartList);
 }

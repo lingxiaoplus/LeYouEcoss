@@ -28,7 +28,9 @@ public enum  ExceptionEnum {
     ILLEGA_ARGUMENT(500,"传递过来的参数不正确"),
     ILLEGA_PHONE_VERIFY_CODE(500,"验证码不正确"),
     USER_REGIST_ERROR(500,"用户注册失败"),
-    CART_NOT_FOUND(500,"购物车商品不存在")
+    CART_NOT_FOUND(500,"购物车商品不存在"),
+    CREATE_ORDER_ERROE(500,"创建订单失败"),
+    STOCK_NOT_ENOUGH(500,"库存不足"),
     ;
     private int code;
     private String msg;
