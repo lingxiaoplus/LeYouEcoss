@@ -179,7 +179,7 @@
 					</div>
 					<div class="clearfix choose">
 						<!--       有问题！！！！！！！！！！！！！  specialSpec不是数组，怎么遍历！！ -->
-						<div id="specification" class="summary-wrap clearfix" v-if="false">
+						<div id="specification" class="summary-wrap clearfix" >
 							<dl v-for="(val, key, index) in specialSpec">
 								<dt>
 									<div class="fl title">
@@ -645,7 +645,9 @@
                 return this.sku.images ? this.sku.images.split(",") : [];
 			},
 			groups(){
-                /*groups.forEach(group=>{
+            	groups.filter(group =>{
+					return group.params !== null
+				}).forEach(group=>{
                     group.params.forEach(param=>{
                         if (param.generic) {
                             param.v = this.genericSpec[param.id];
@@ -653,7 +655,7 @@
                             param.v = JSON.parse(this.sku.ownSpec)[param.id];
 						}
 					});
-				});*/
+				});
                 return groups;
 			}
 		},

@@ -31,6 +31,7 @@ public class SpecificationService {
         if (CollectionUtils.isEmpty(specGroups)){
             throw new LyException(ExceptionEnum.SELECT_GROUP_NOT_FOUNT);
         }
+
         return specGroups;
     }
 
@@ -65,6 +66,7 @@ public class SpecificationService {
         List<SpecParam> paramList = getGroupParamByGid(null, cid, null);
         //新建一个map  key为group的id  value为规格参数
         Map<Long,List<SpecParam>> map = new HashMap<>();
+
         paramList.forEach((param)->{
             if (!map.containsKey(param.getGroupId())){
                 map.put(param.getGroupId(),new ArrayList<>());
@@ -73,7 +75,8 @@ public class SpecificationService {
         });
 
         groupList.forEach((group)->{
-            group.setParams(map.get(group.getId()));
+            List<SpecParam> specParams = map.get(group.getId());
+            group.setParams(specParams);
         });
         return groupList;
     }

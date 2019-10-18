@@ -43,15 +43,24 @@ public class PageService {
         Brand brand = brandClient.getBrandById(spu.getBrandId());
         List<Category> categories = categoryClient.queryCategoryNamesByIds(
                 Arrays.asList(spu.getCid1(), spu.getCid2(), spu.getCid3()));
-        List<SpecGroup> specs = specClient.getGroupByCid(spu.getCid3());
+        List<SpecGroup> groups = specClient.getGroupAndParmsByCid(spu.getCid3());
 
+        List<SpecParam> params = specClient.getGroupParamByPid(null, spu.getCid3(), false);
+
+
+        Map<Long, String> paramMap = new HashMap<>();
+        params.forEach(param -> {
+            paramMap.put(param.getId(), param.getName());
+        });
         map.put("title",spu.getTitle());
         map.put("subTitle",spu.getSubTitle());
         map.put("skus",skus);
         map.put("spuDetail",spuDetail);
         map.put("brand",brand);
         map.put("categories",categories);
-        map.put("specs",specs);
+        map.put("groups",groups);
+        map.put("paramMap",paramMap);
+
         return map;
     }
 
