@@ -26,3 +26,10 @@ ly:
   worker:
     workerId: 1
     datacenterId: 1
+  pay:
+    appID: wx8397f8696b538317
+    mchID: 1473426802
+    key: T6m9ik73b0kn9g5v42MKfHQH7X8rKwb
+    httpConnectTimeoutMs: 1000
+    httpReadTimeoutMs: 8000
+    notifyUrl: http://lingxiao.xiaomy.net/notify/pay

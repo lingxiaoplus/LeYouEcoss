@@ -24,7 +24,7 @@ public class Order {
     private String userId;
     private String buyerMessage;
     private String buyerNick;
-    private String buyerRate;
+    private Integer buyerRate;
 
     private String receiverState;
     private String receiverCity;

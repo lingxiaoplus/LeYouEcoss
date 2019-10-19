@@ -28,8 +28,8 @@ public interface GoodsApi {
     @GetMapping("/sku/{id}")
     Sku getSkuById(@PathVariable("id") Long id);
 
-    @GetMapping("/sku/{ids}")
-    List<Sku> getSkuListByIds(@PathVariable("ids") List<Long> ids);
+    @GetMapping("/skus")
+    List<Sku> getSkuListByIds(@RequestParam("ids") List<Long> ids);
 
     @PostMapping("/stock/decrease")
     void decreaseStock(@RequestBody List<CartDto> cartList);

@@ -70,8 +70,8 @@ public class GoodsController {
      * @param ids
      * @return
      */
-    @GetMapping("/sku/{ids}")
-    public ResponseEntity<List<Sku>> getSkuListByIds(@PathVariable("ids") List<Long> ids){
+    @GetMapping("/skus")
+    public ResponseEntity<List<Sku>> getSkuListByIds(@RequestParam("ids") List<Long> ids){
         return ResponseEntity.ok(goodsService.getSkuListByIds(ids));
     }
 
